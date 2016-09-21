@@ -7,6 +7,9 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+// bind websocket
+require('express-ws')(app);
+
 // view engine setup
 var etc = require('ect');
 app.engine('ect', etc({ watch: true, root: __dirname + '/views', ext: '.ect' }).render);
@@ -54,6 +57,5 @@ app.use(function(err, req, res, next) {
     title: 'Error'
   });
 });
-
 
 module.exports = app;
