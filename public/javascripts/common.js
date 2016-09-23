@@ -6,7 +6,7 @@ WSI.createWSConnection = function (host, is_secure) {
     }
 
     if (typeof is_secure === "undefined") {
-        is_secure = window.location.protocol === "https";
+        is_secure = window.location.protocol.indexOf("https") != -1;
     }
 
     var protocol = is_secure ? "wss" : "ws";
