@@ -2,7 +2,25 @@
 
 <h1><%= @title %></h1>
 
-<div>
-count : <span class="count"></span>
-</div>
+<p>
+	<input type="button" class="btn btn-primay" id="test" value="テスト">
+</p>
+
+<p>
+	<table class="table table-bordered" id="result">
+		<tr>
+			<th>from</th>
+			<th>send(ms)</th>
+			<th>receive(ms)</th>
+			<th>diff(ms)</th>
+		</tr>
+		<tr class="template" style="display:none">
+			<td class="from"></td>
+			<td class="send"></td>
+			<td class="receive"></td>
+			<td class="diff"></td>
+		</tr>
+	</table>
+</p>
+
 <script type="text/javascript" src="/javascripts/client_delay.js"></script>

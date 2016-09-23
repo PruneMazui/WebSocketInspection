@@ -13,11 +13,5 @@ WSI.createWSConnection = function (host, is_secure) {
 
     var ws = new WebSocket(protocol + '://' + host + '/');
 
-    ws.onerror = function (e) {
-        window.alert('サーバに接続できませんでした。');
-        console.log(e);
-        return false;
-    };
-
     return ws;
 };
