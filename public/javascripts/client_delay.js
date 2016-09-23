@@ -21,8 +21,6 @@ $(function(){
         var receive = (new Date()).getTime();
         var data = JSON.parse(event.data);
 
-        console.log(data);
-
         var template = $('.template').clone().removeClass('template');
         template.find('.from').text(data.ua);
         template.find('.send').text(data.time);
