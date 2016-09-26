@@ -9,16 +9,18 @@
 <p>
 	<table class="table table-bordered" id="result">
 		<tr>
-			<th>from</th>
-			<th>send(ms)</th>
-			<th>receive(ms)</th>
-			<th>diff(ms)</th>
+			<th>sent ip</th>
+			<th style="width: 50%;">sent ua</th>
+			<th>send time(ms)</th>
+			<th>receive time(ms)</th>
+			<th>delay ( {receive - send} / 2) </th>
 		</tr>
-		<tr class="template" style="display:none">
-			<td class="from"></td>
+		<tr class="template table_row small" style="display:none">
+			<td class="sent_ip"></td>
+			<td class="sent_ua"></td>
 			<td class="send"></td>
 			<td class="receive"></td>
-			<td class="diff"></td>
+			<td class="delay"></td>
 		</tr>
 	</table>
 </p>
